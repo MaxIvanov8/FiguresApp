@@ -28,6 +28,7 @@ public class MainViewModel:INotifyPropertyChanged
     public ObservableCollection<Figure> FiguresCollection { get; }
     public ICommand AddCommand { get; }
     public ICommand DeleteCommand { get; }
+    public ICommand ClearCommand { get; }
     public int Left { get; set; }
     public int Top { get; set; }
     public int Width { get; set; }
@@ -40,6 +41,7 @@ public class MainViewModel:INotifyPropertyChanged
         SelectedColor = Brushes.Black;
         AddCommand = new RelayCommand(AddMethod);
         DeleteCommand = new RelayCommand<Figure>(obj=>FiguresCollection.Remove(obj));
+        ClearCommand = new RelayCommand(()=>FiguresCollection.Clear());
     }
 
     private void AddMethod()

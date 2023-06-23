@@ -238,7 +238,10 @@
                 <TextBlock Text="Height: " Visibility="{Binding SelectedType, Converter={StaticResource BoolToVisibilityConverter}}" Margin="3,0,0,0"/>
                 <TextBox Text="{Binding Height, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding SelectedType, UpdateSourceTrigger=PropertyChanged,  Converter={StaticResource BoolToVisibilityConverter}}"/>
             </StackPanel>
-            <Button Content="Add" Command="{Binding AddCommand}" Width="100" Margin="0,15,0,0"/>
+            <StackPanel  Margin="0,15,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Content="Add" Command="{Binding AddCommand}" Width="100"/>
+                <Button Content="Clear" Command="{Binding ClearCommand}" Width="100" Margin="10,0,0,0"/>
+            </StackPanel>
         </StackPanel>
         <DataGrid Grid.Column="0" Grid.Row="2" ItemsSource="{Binding FiguresCollection}" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Resources>
