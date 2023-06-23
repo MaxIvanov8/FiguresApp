@@ -1,6 +1,6 @@
 # Figures app
 This repo contains .NET7 project of figures app.<br /><br />
-![alt text](Screenshot.png)<br />
+![alt text](Screenshot.PNG)<br /><br />
 User can:<br />
 -adding figures: round, square, rectangle, ellispe;<br />
 -deleting figures;<br />
