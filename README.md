@@ -1,5 +1,5 @@
 # Figures app
-This repo contains .NET7 project of figures app.<br /><br />
+This repo contains .NET8 project of figures app.<br /><br />
 ![alt text](Screenshot.PNG)<br /><br />
 User can:<br />
 -adding figures: round, square, rectangle, ellispe;<br />
@@ -14,7 +14,7 @@ Clone this repo to your local machine using: https://github.com/MaxIvanov8/Figur
 
 ## Stack technologies
 
-**Framework:** .NET 6.0, WPF.<br /><br />
+**Framework:** .NET 8.0, WPF.<br /><br />
 **Packages:**
 - MvvmLightLibs 5.4.1.1;
 
