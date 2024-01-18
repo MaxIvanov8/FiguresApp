@@ -258,7 +258,9 @@
             </DataGrid.Resources>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Type" Binding="{Binding Type}"/>
-            <DataGridTextColumn Header="Color" Binding="{Binding Color}"/>
+                <DataGridTextColumn Header="Color" Binding="{Binding Color}"/>
+                <DataGridTextColumn Header="Left" Binding="{Binding Left}"/>
+                <DataGridTextColumn Header="Top" Binding="{Binding Top}"/>
             </DataGrid.Columns>
         </DataGrid>
         <ItemsControl Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" ItemsSource="{Binding FiguresCollection}" BorderBrush="Black" BorderThickness="1">
